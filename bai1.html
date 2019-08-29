@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fbncc1 = 0 , fbncc2 = 1 ,fbncc3 ,temp, i ;
+    let n = parseInt(prompt('Nhap vao 1 so: '));
+    document.write(fbncc1);
+    document.write(fbncc2);
+    for (i = 3 ; i <= n ; i++){
+        fbncc3 = fbncc1 + fbncc2;
+        fbncc1 = fbncc2;
+        fbncc2 = fbncc3;
+        document.write(' '+fbncc3);
+    }
+    document.write('<br>' +'<hr>');
+</script>
+</body>
+</html>
